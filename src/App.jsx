@@ -1,19 +1,21 @@
 // import bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css'
+import NavBar from './components/NavBar'
+import Banner from './components/Banner'
+import BannerImg from './components/BannerImg'
 
 function App() {
 return (
     <>
-      <div className="container">
-          <div className="row">
-            <div className=" mt-5 pt-5 fw-bold col-md-6">
-              dsff
-              </div>
-              <div className="col-md-6 fw-bolder mt-5 pt-5">
-                lol
-              </div>
-          </div>
-      </div>
+    <div className='position-absolute'>
+      <NavBar/>
+    </div>
+    <div className='position-absolute banner'>
+      <Banner/>
+    </div>
+    <div className="position-absolute image-banner">
+      <BannerImg/>
+    </div>
     </>
   )
 }
